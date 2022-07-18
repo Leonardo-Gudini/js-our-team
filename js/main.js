@@ -40,10 +40,12 @@ for(let i = 0; i < team.length ; i++){
 
     teamDom.innerHTML +=    `   
                             <div id="persona">
-                                <div id="nome">${team[i].nome}</div>
-                                <div id="ruolo">${team[i].ruolo}</div>
-                                <img src="img/${team[i]["immagine profilo"]}" alt="${team[i].nome}"> 
+                                <img src="img/${team[i]["immagine profilo"]}" alt="${team[i].nome}">
+                                <div class="text">
+                                    <div id="nome">${team[i].nome}</div>
+                                    <div id="ruolo">${team[i].ruolo}</div>
+                                </div>
                             </div>
-                            ` ;//non mette lo "/"
-}
+                            `
+};
 
