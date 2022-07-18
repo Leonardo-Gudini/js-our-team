@@ -42,8 +42,8 @@ for(let i = 0; i < team.length ; i++){
                             <div id="persona">
                                 <div id="nome">${team[i].nome}</div>
                                 <div id="ruolo">${team[i].ruolo}</div>
-                                <div id="immagine">${team[i]["immagine profilo"]}</div>
+                                <img src="img/${team[i]["immagine profilo"]}" alt="${team[i].nome}"> 
                             </div>
-                            ` ;
+                            ` ;//non mette lo "/"
 }
 
