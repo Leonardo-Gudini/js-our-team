@@ -31,10 +31,19 @@ const team =    [
                     }
 ];
 
+let teamDom = document.getElementById("teamDom");
 
 for(let i = 0; i < team.length ; i++){
     console.log(team[i].nome);
     console.log(team[i].ruolo);
     console.log(team[i]["immagine profilo"]);
+
+    teamDom.innerHTML +=    `   
+                            <div id="persona">
+                                <div id="nome">${team[i].nome}</div>
+                                <div id="ruolo">${team[i].ruolo}</div>
+                                <div id="immagine">${team[i]["immagine profilo"]}</div>
+                            </div>
+                            ` ;
 }
 
