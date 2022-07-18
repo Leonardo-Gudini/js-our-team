@@ -29,6 +29,12 @@ const team =    [
                         ruolo: "Graphic Designer",
                         "immagine profilo": "barbara-ramos-graphic-designer.jpg"
                     }
-                ]
+];
 
-console.log(team);
+
+for(let i = 0; i < team.length ; i++){
+    console.log(team[i].nome);
+    console.log(team[i].ruolo);
+    console.log(team[i]["immagine profilo"]);
+}
+
